@@ -27,7 +27,6 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       MODE: JSON.stringify(config.MODE),
-      URL_WEBSOCKETS: JSON.stringify(config.URL)
     })
   ],
   module: {
