@@ -1,11 +1,11 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
-const config = require("dotenv").config().parsed;
+const config = require("dotenv").config();
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: config.MODE,
+  mode: proccess.env.MODE,
   entry: {
     main: path.join(__dirname, "/src/index.js")
   },
