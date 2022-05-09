@@ -26,7 +26,7 @@ module.exports = {
       filename: "bundle.css"
     }),
     new webpack.DefinePlugin({
-      MODE: JSON.stringify(proccess.env.MODE),
+      MODE: JSON.stringify(process.env.MODE),
     })
   ],
   module: {
