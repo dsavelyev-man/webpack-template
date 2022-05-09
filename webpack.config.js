@@ -5,7 +5,7 @@ const config = require("dotenv").config();
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: proccess.env.MODE,
+  mode: process.env.MODE,
   entry: {
     main: path.join(__dirname, "/src/index.js")
   },
